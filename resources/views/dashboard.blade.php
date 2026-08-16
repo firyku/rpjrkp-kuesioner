@@ -1,14 +1,5 @@
 @extends('layouts.admin')
-
-@section('title', 'Dashboard | Indeks Desa')
-@section('breadcrumb', 'Dashboard')
+@section('title', 'Dashboard | Aplikasi Perencanaan Desa')
 @section('content')
-    <div class="page-heading"><div><h1>Dashboard</h1><p>Ringkasan pengisian Indeks Desa Tahun 2026.</p></div><a class="button button-primary" href="{{ route('kuesioner') }}">Isi Kuesioner</a></div>
-    <section class="stat-grid">
-        <article><span>STATUS PENGISIAN</span><strong>Dalam Proses</strong><small>Perbarui data untuk melanjutkan</small></article>
-        <article><span>PROGRES KUESIONER</span><strong>0%</strong><div class="progress"><i style="width:0%"></i></div></article>
-        <article><span>TAHUN PENDATAAN</span><strong>2026</strong><small>Indeks Desa</small></article>
-        <article><span>WILAYAH</span><strong>Gudangharjo</strong><small>Kec. Paranggupito</small></article>
-    </section>
-    <section class="surface dashboard-welcome"><span class="eyebrow">SELAMAT DATANG</span><h2>Lengkapi data Indeks Desa</h2><p>Gunakan menu Kuesioner untuk mengisi data desa. Data yang hanya satu kali diisi disajikan sebagai formulir detail, sedangkan data berulang dikelola sebagai tabel.</p><a class="button button-primary" href="{{ route('kuesioner') }}">Buka Kuesioner</a></section>
+<div class="dashboard-wrap"><section class="hero-band"><div class="hero-copy"><span class="eyebrow">APLIKASI PERENCANAAN DESA</span><h1>Selamat datang, Desa Gudangharjo</h1><p>Kelola data perencanaan desa, dokumen RPJMDesa, RKPDesa, dan APBDesa dalam satu ruang kerja.</p><a class="btn btn-primary" href="{{ route('kuesioner') }}">Buka Input Kuesioner</a></div><div class="hero-media"></div></section><section class="metric-grid"><article class="metric-card"><span>Dokumen RPJMDesa</span><strong>24</strong><small>Dokumen terkelola</small></article><article class="metric-card"><span>Dokumen RKPDesa</span><strong>18</strong><small>Rencana kerja tahunan</small></article><article class="metric-card"><span>Data Terverifikasi</span><strong>18</strong><small>Siap digunakan</small></article><article class="metric-card"><span>Menunggu Review</span><strong>6</strong><small>Perlu dilengkapi</small></article></section></div>
 @endsection
